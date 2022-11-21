@@ -22,7 +22,7 @@ public class TimerTask: NSObject {
     var eventHandler: (() -> Void)
     
     override public var description: String {
-        return "<\(Self.self) identifier: \(identifier), timeInterval: \(timeInterval), repeats: \(repeats), createdAt: \(createdAt)>"
+        return "<\(Self.self), identifier: \(identifier), timeInterval: \(timeInterval), repeats: \(repeats), createdAt: \(createdAt)>\n"
     }
     
     public init(identifier: String,

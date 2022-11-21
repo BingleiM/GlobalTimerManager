@@ -50,9 +50,9 @@ class ViewController: UIViewController {
             debugPrint(Date(), "This this a once-time task")
         }
         
-        // Get all added task identifiers
-        let taskIdentifiers = GlobalTimerMananger.default().taskIdentifiers
-        debugPrint("all taskIdentifiers: \(taskIdentifiers)")
+        // Get all added tasks
+        let tasks = GlobalTimerMananger.default().tasks
+        debugPrint("all tasks: \(tasks)")
     }
     
     @IBAction func resumeTasksAction(_ sender: Any) {

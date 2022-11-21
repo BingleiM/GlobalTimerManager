@@ -30,9 +30,14 @@ final public class GlobalTimerMananger: NSObject {
     /// timer 调用间隔
     @Protected(1)
     private var timerRepeatInterval: UInt
-    /// 获取当前定时器中已添加的任务
+    /// 获取当前定时器中已添加的任务的 id
     public var taskIdentifiers: [String] {
+        print(taskManager.tasks.values)
         return taskManager.taskIdentifiers()
+    }
+    /// 获取当前定时器中已添加的任务
+    public var tasks: [TimerTask] {
+        return taskManager.tasks.values.sorted { $0.timeInterval > $1.timeInterval }
     }
 
     deinit {
