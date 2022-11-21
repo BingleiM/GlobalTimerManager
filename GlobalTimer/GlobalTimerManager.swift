@@ -1,5 +1,5 @@
 //
-//  GlobalTimerMananger.swift
+//  GlobalTimerManager.swift
 //  HiPOSHD_iPad
 //
 //  Created by 马冰垒 on 2022/8/9.
@@ -9,12 +9,12 @@
 
 import Foundation
 
-final public class GlobalTimerMananger: NSObject {
+final public class GlobalTimerManager: NSObject {
     
     private let kKeyPath = "tasks"
-    private static var single = GlobalTimerMananger()
-    private lazy var taskManager: TimerTaskMananger = {
-        let tm = TimerTaskMananger()
+    private static var single = GlobalTimerManager()
+    private lazy var taskManager: TimerTaskManager = {
+        let tm = TimerTaskManager()
         return tm
     }()
     
@@ -60,14 +60,14 @@ final public class GlobalTimerMananger: NSObject {
     }
     
     // MARK: -- Public Methods --
-    public class func `default`() -> GlobalTimerMananger {
+    public class func `default`() -> GlobalTimerManager {
         return single
     }
     
     public class func reset() {
         single.loopTimer?.cancel()
         single.loopTimer = nil
-        single = GlobalTimerMananger()
+        single = GlobalTimerManager()
     }
     
     /// 向全局定时器中添加单个任务
@@ -111,7 +111,7 @@ final public class GlobalTimerMananger: NSObject {
 }
 
 // MARK: -- Private Methods --
-extension GlobalTimerMananger {
+extension GlobalTimerManager {
     
     private func _setup() {
         activateLoopTimer(interval: timerRepeatInterval,
@@ -173,7 +173,7 @@ extension GlobalTimerMananger {
 }
 
 // MARK: -- Timer --
-extension GlobalTimerMananger {
+extension GlobalTimerManager {
     
     private func activateLoopTimer(interval: UInt, event: LoopTimerHandler?) {
         guard (loopTimer == nil || loopTimer?.isCancelled == false) else { return }

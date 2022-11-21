@@ -9,7 +9,7 @@
 import Foundation
 
 @objcMembers
-class TimerTaskMananger: NSObject {
+class TimerTaskManager: NSObject {
     /// 所有任务
     @Protected([:])
     dynamic private(set) var tasks: [String: TimerTask]

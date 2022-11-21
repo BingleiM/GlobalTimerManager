@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     
     @IBAction func addtasksAction(_ sender: Any) {
         // Execute a task
-        GlobalTimerMananger.default().executeTask(identifier: "Cat", timeInterval: 2) {
+        GlobalTimerManager.default().executeTask(identifier: "Cat", timeInterval: 2) {
             // print 🐱 every 1 second
             debugPrint(Date(), "🐱")
         }
         
-        GlobalTimerMananger.default().executeTask(identifier: "Dog", timeInterval: 1) {
+        GlobalTimerManager.default().executeTask(identifier: "Dog", timeInterval: 1) {
             // print 🐶 every 2 second
             debugPrint(Date(),"🐶")
         }
@@ -43,15 +43,15 @@ class ViewController: UIViewController {
         }
         
         // Execute multiple tasks at once
-        GlobalTimerMananger.default().executeTasks([task1, task2])
+        GlobalTimerManager.default().executeTasks([task1, task2])
         
         // Execute a once-time task
-        GlobalTimerMananger.default().executeTask(identifier: "This this a once-time task", timeInterval: 3, repeats: false) {
+        GlobalTimerManager.default().executeTask(identifier: "This this a once-time task", timeInterval: 3, repeats: false) {
             debugPrint(Date(), "This this a once-time task")
         }
         
         // Get all added tasks
-        let tasks = GlobalTimerMananger.default().tasks
+        let tasks = GlobalTimerManager.default().tasks
         debugPrint("all tasks: \(tasks)")
     }
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         debugPrint("\(NSDate()) resumeTasks")
         taskIds.forEach { id in
             // Resume a task with identifier
-            GlobalTimerMananger.default().resumeTask(identifier: id)
+            GlobalTimerManager.default().resumeTask(identifier: id)
         }
     }
     
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         debugPrint("\(NSDate()) suspendTasks")
         taskIds.forEach { id in
             // Suspend a task with identifier
-            GlobalTimerMananger.default().suspendTask(identifier: id)
+            GlobalTimerManager.default().suspendTask(identifier: id)
         }
     }
     
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         debugPrint("\(NSDate()) cancelTasks")
         taskIds.forEach { id in
             // Cancel a task with identifier
-            GlobalTimerMananger.default().cancelTask(identifier: id)
+            GlobalTimerManager.default().cancelTask(identifier: id)
         }
     }
 }

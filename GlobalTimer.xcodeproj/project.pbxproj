@@ -13,8 +13,8 @@
 		F8CF0E4C2927304100609F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4A2927304100609F4B /* Main.storyboard */; };
 		F8CF0E4E2927304200609F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4D2927304200609F4B /* Assets.xcassets */; };
 		F8CF0E512927304200609F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4F2927304200609F4B /* LaunchScreen.storyboard */; };
-		F8CF0E5B2927307100609F4B /* GlobalTimerMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E572927307100609F4B /* GlobalTimerMananger.swift */; };
-		F8CF0E5C2927307100609F4B /* TimerTaskMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E582927307100609F4B /* TimerTaskMananger.swift */; };
+		F8CF0E5B2927307100609F4B /* GlobalTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E572927307100609F4B /* GlobalTimerManager.swift */; };
+		F8CF0E5C2927307100609F4B /* TimerTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E582927307100609F4B /* TimerTaskManager.swift */; };
 		F8CF0E5D2927307100609F4B /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E592927307100609F4B /* GCD.swift */; };
 		F8CF0E5E2927307100609F4B /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E5A2927307100609F4B /* TimerTask.swift */; };
 		F8CF0E622927320700609F4B /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E612927320700609F4B /* Protected.swift */; };
@@ -30,8 +30,8 @@
 		F8CF0E4D2927304200609F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CF0E502927304200609F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8CF0E522927304200609F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8CF0E572927307100609F4B /* GlobalTimerMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTimerMananger.swift; sourceTree = "<group>"; };
-		F8CF0E582927307100609F4B /* TimerTaskMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTaskMananger.swift; sourceTree = "<group>"; };
+		F8CF0E572927307100609F4B /* GlobalTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTimerManager.swift; sourceTree = "<group>"; };
+		F8CF0E582927307100609F4B /* TimerTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTaskManager.swift; sourceTree = "<group>"; };
 		F8CF0E592927307100609F4B /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		F8CF0E5A2927307100609F4B /* TimerTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
 		F8CF0E612927320700609F4B /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 		F8CF0E3429272FBE00609F4B /* GlobalTimer */ = {
 			isa = PBXGroup;
 			children = (
-				F8CF0E572927307100609F4B /* GlobalTimerMananger.swift */,
-				F8CF0E582927307100609F4B /* TimerTaskMananger.swift */,
+				F8CF0E572927307100609F4B /* GlobalTimerManager.swift */,
+				F8CF0E582927307100609F4B /* TimerTaskManager.swift */,
 				F8CF0E5A2927307100609F4B /* TimerTask.swift */,
 				F8CF0E592927307100609F4B /* GCD.swift */,
 				F8CF0E612927320700609F4B /* Protected.swift */,
@@ -213,9 +213,9 @@
 			files = (
 				F8CF0E622927320700609F4B /* Protected.swift in Sources */,
 				F8CF0E5D2927307100609F4B /* GCD.swift in Sources */,
-				F8CF0E5B2927307100609F4B /* GlobalTimerMananger.swift in Sources */,
+				F8CF0E5B2927307100609F4B /* GlobalTimerManager.swift in Sources */,
 				F8CF0E5E2927307100609F4B /* TimerTask.swift in Sources */,
-				F8CF0E5C2927307100609F4B /* TimerTaskMananger.swift in Sources */,
+				F8CF0E5C2927307100609F4B /* TimerTaskManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -382,12 +382,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bingleima.GlobalTimer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -398,6 +399,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -413,12 +416,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bingleima.GlobalTimer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -429,6 +433,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -446,7 +452,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
