@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8CF0E3829272FBE00609F4B /* GlobalTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CF0E3529272FBE00609F4B /* GlobalTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84E608E292C6613002D8FD8 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E6088292C6613002D8FD8 /* GCD.swift */; };
+		F84E608F292C6613002D8FD8 /* TimerTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E6089292C6613002D8FD8 /* TimerTaskManager.swift */; };
+		F84E6090292C6613002D8FD8 /* GlobalTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F84E608A292C6613002D8FD8 /* GlobalTimer.h */; };
+		F84E6091292C6613002D8FD8 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E608B292C6613002D8FD8 /* Protected.swift */; };
+		F84E6092292C6613002D8FD8 /* GlobalTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E608C292C6613002D8FD8 /* GlobalTimerManager.swift */; };
+		F84E6093292C6613002D8FD8 /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E608D292C6613002D8FD8 /* TimerTask.swift */; };
 		F8CF0E452927304000609F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E442927304000609F4B /* AppDelegate.swift */; };
 		F8CF0E492927304100609F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E482927304000609F4B /* ViewController.swift */; };
 		F8CF0E4C2927304100609F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4A2927304100609F4B /* Main.storyboard */; };
 		F8CF0E4E2927304200609F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4D2927304200609F4B /* Assets.xcassets */; };
 		F8CF0E512927304200609F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF0E4F2927304200609F4B /* LaunchScreen.storyboard */; };
-		F8CF0E5B2927307100609F4B /* GlobalTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E572927307100609F4B /* GlobalTimerManager.swift */; };
-		F8CF0E5C2927307100609F4B /* TimerTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E582927307100609F4B /* TimerTaskManager.swift */; };
-		F8CF0E5D2927307100609F4B /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E592927307100609F4B /* GCD.swift */; };
-		F8CF0E5E2927307100609F4B /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E5A2927307100609F4B /* TimerTask.swift */; };
-		F8CF0E622927320700609F4B /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF0E612927320700609F4B /* Protected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84E6088292C6613002D8FD8 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		F84E6089292C6613002D8FD8 /* TimerTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTaskManager.swift; sourceTree = "<group>"; };
+		F84E608A292C6613002D8FD8 /* GlobalTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalTimer.h; sourceTree = "<group>"; };
+		F84E608B292C6613002D8FD8 /* Protected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		F84E608C292C6613002D8FD8 /* GlobalTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTimerManager.swift; sourceTree = "<group>"; };
+		F84E608D292C6613002D8FD8 /* TimerTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
 		F8CF0E3229272FBE00609F4B /* GlobalTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8CF0E3529272FBE00609F4B /* GlobalTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalTimer.h; sourceTree = "<group>"; };
 		F8CF0E422927304000609F4B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CF0E442927304000609F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8CF0E482927304000609F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,11 +35,6 @@
 		F8CF0E4D2927304200609F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CF0E502927304200609F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8CF0E522927304200609F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8CF0E572927307100609F4B /* GlobalTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTimerManager.swift; sourceTree = "<group>"; };
-		F8CF0E582927307100609F4B /* TimerTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTaskManager.swift; sourceTree = "<group>"; };
-		F8CF0E592927307100609F4B /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
-		F8CF0E5A2927307100609F4B /* TimerTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
-		F8CF0E612927320700609F4B /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F84E6087292C6613002D8FD8 /* TimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				F84E6088292C6613002D8FD8 /* GCD.swift */,
+				F84E6089292C6613002D8FD8 /* TimerTaskManager.swift */,
+				F84E608A292C6613002D8FD8 /* GlobalTimer.h */,
+				F84E608B292C6613002D8FD8 /* Protected.swift */,
+				F84E608C292C6613002D8FD8 /* GlobalTimerManager.swift */,
+				F84E608D292C6613002D8FD8 /* TimerTask.swift */,
+			);
+			path = TimerManager;
+			sourceTree = "<group>";
+		};
 		F8CF0E2829272FBE00609F4B = {
 			isa = PBXGroup;
 			children = (
-				F8CF0E3429272FBE00609F4B /* GlobalTimer */,
+				F84E6087292C6613002D8FD8 /* TimerManager */,
 				F8CF0E432927304000609F4B /* Example */,
 				F8CF0E3329272FBE00609F4B /* Products */,
 			);
@@ -71,19 +84,6 @@
 				F8CF0E422927304000609F4B /* Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F8CF0E3429272FBE00609F4B /* GlobalTimer */ = {
-			isa = PBXGroup;
-			children = (
-				F8CF0E572927307100609F4B /* GlobalTimerManager.swift */,
-				F8CF0E582927307100609F4B /* TimerTaskManager.swift */,
-				F8CF0E5A2927307100609F4B /* TimerTask.swift */,
-				F8CF0E592927307100609F4B /* GCD.swift */,
-				F8CF0E612927320700609F4B /* Protected.swift */,
-				F8CF0E3529272FBE00609F4B /* GlobalTimer.h */,
-			);
-			path = GlobalTimer;
 			sourceTree = "<group>";
 		};
 		F8CF0E432927304000609F4B /* Example */ = {
@@ -106,7 +106,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CF0E3829272FBE00609F4B /* GlobalTimer.h in Headers */,
+				F84E6090292C6613002D8FD8 /* GlobalTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,11 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CF0E622927320700609F4B /* Protected.swift in Sources */,
-				F8CF0E5D2927307100609F4B /* GCD.swift in Sources */,
-				F8CF0E5B2927307100609F4B /* GlobalTimerManager.swift in Sources */,
-				F8CF0E5E2927307100609F4B /* TimerTask.swift in Sources */,
-				F8CF0E5C2927307100609F4B /* TimerTaskManager.swift in Sources */,
+				F84E6092292C6613002D8FD8 /* GlobalTimerManager.swift in Sources */,
+				F84E6091292C6613002D8FD8 /* Protected.swift in Sources */,
+				F84E608F292C6613002D8FD8 /* TimerTaskManager.swift in Sources */,
+				F84E608E292C6613002D8FD8 /* GCD.swift in Sources */,
+				F84E6093292C6613002D8FD8 /* TimerTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

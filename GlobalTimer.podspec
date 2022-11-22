@@ -19,6 +19,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "mabinglei" => "bingleima@qq.com" }
   spec.ios.deployment_target = "10.0"
   spec.source       = { :git => "https://github.com/BingleiM/GlobalTimerManager.git", :tag => spec.version }
-  spec.source_files = "GlobalTimer/*.{swift,h}"
+  spec.source_files = "TimerManager/*.{swift,h}"
   spec.requires_arc = true
 end
