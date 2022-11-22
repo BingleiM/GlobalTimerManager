@@ -55,7 +55,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F84E6087292C6613002D8FD8 /* TimerManager */ = {
+		F84E6087292C6613002D8FD8 /* BLGlobalTimer */ = {
 			isa = PBXGroup;
 			children = (
 				F84E6088292C6613002D8FD8 /* GCD.swift */,
@@ -65,13 +65,13 @@
 				F84E608C292C6613002D8FD8 /* GlobalTimerManager.swift */,
 				F84E608D292C6613002D8FD8 /* TimerTask.swift */,
 			);
-			path = TimerManager;
+			path = BLGlobalTimer;
 			sourceTree = "<group>";
 		};
 		F8CF0E2829272FBE00609F4B = {
 			isa = PBXGroup;
 			children = (
-				F84E6087292C6613002D8FD8 /* TimerManager */,
+				F84E6087292C6613002D8FD8 /* BLGlobalTimer */,
 				F8CF0E432927304000609F4B /* Example */,
 				F8CF0E3329272FBE00609F4B /* Products */,
 			);
