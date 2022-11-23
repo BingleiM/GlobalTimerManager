@@ -32,7 +32,6 @@ final public class GlobalTimerManager: NSObject {
     private var timerRepeatInterval: UInt
     /// 获取当前定时器中已添加的任务的 id
     public var taskIdentifiers: [String] {
-        print(taskManager.tasks.values)
         return taskManager.taskIdentifiers()
     }
     /// 获取当前定时器中已添加的任务
