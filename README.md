@@ -1,4 +1,16 @@
 # GlobalTimerMananger
+
+### CocoaPods
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'BLGlobalTimer', '~> 1.0.0'
+end
+```
+
 ### 1. Execute Tasks
 #### 1.1 Single task
 
